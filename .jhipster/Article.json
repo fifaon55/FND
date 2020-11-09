@@ -1,0 +1,41 @@
+{
+  "name": "Article",
+  "fields": [
+    {
+      "fieldName": "newsContent",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateDetected",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "emailAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isDeleted",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "label",
+      "otherEntityRelationshipName": "id",
+      "relationshipName": "labelId",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201012142333",
+  "entityTableName": "article",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

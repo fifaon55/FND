@@ -1,0 +1,37 @@
+entity Article {
+	id Integer,
+    newsContent String,
+    dateDetected LocalDate,
+    emailAddress String,
+    isDeleted Boolean
+}
+enum LabelType {
+	NORMAL, FAKE, REAL
+}
+entity Label {
+	id Integer,
+    label LabelType,
+}
+
+
+
+
+// Set pagination options
+paginate Article with infinite-scroll
+paginate Article with pagination
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceClass
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
+
+
+relationship OneToMany {
+	Label{id} to Article{labelId}
+}
+
+

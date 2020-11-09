@@ -1,0 +1,29 @@
+{
+  "name": "Label",
+  "fields": [
+    {
+      "fieldName": "label",
+      "fieldType": "LabelType",
+      "fieldValues": "NORMAL,FAKE,REAL"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "article",
+      "otherEntityRelationshipName": "labelId",
+      "relationshipName": "id"
+    }
+  ],
+  "changelogDate": "20201021142833",
+  "entityTableName": "label",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

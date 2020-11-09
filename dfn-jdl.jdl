@@ -1,0 +1,21 @@
+entity Article {
+	id String,
+    title String,
+    text String,
+    dateCreated String,
+    articleStatus String,
+    label String,
+}
+
+// Set pagination options
+paginate Article with infinite-scroll
+paginate Article with pagination
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceClass
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

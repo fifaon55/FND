@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "fpt.captonse.dfn"
+    },
+    "jhipsterVersion": "6.10.3",
+    "applicationType": "monolith",
+    "baseName": "dfnadmin",
+    "packageName": "fpt.captonse.dfn",
+    "packageFolder": "fpt/captonse/dfn",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "Mjc5NjJhYjA0MTg4NTE2ZDcwNTBjNWJlZTU1MDAyMzRhZWNhYmNmNTQ5NzgzYjg1YjdmYTA3YjVmZTZhZTA4ZjRmMGIxZWQyZDVjOGM2MjFlN2IxNWM2M2Y0NDU4ODkzNzg5MzA5NDhkMzhjOWU1ZTE3YTM0NmQ1ZmU4YmQ4Mjk=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "flatly",
+    "clientThemeVariant": "light",
+    "creationTimestamp": 1602508563555,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
